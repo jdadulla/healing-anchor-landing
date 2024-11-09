@@ -1,72 +1,72 @@
+/* Import Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #3A4F7A, #7891D0);
-    color: white;
-    text-align: center;
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(to bottom, #a5c9ff, #6d93d1);
+  color: white;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .logo {
-    width: 100px;
-    margin-bottom: 20px;
+  width: 100px; /* Adjust the logo size */
+  display: block;
+  margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.2rem;
-    margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 #countdown {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 1.2rem;
-    margin: 20px 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 #countdown div {
-    display: flex;
-    flex-direction: column;
+  text-align: center;
 }
 
 .social-links {
-    margin-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.icon {
-    display: inline-block;
-    margin: 10px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
+.social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
-.instagram::before {
-    content: '📸 ';
+.social-links a:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
-.facebook::before {
-    content: '📘 ';
-}
-
-.tiktok::before {
-    content: '🎵 ';
-}
-
-.email::before {
-    content: '✉️ ';
-}
-
-.icon:hover {
-    opacity: 0.8;
+/* Ensure everything aligns left */
+.container, .logo, h1, p, #countdown, .social-links {
+  text-align: left;
 }
