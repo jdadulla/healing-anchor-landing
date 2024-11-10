@@ -45,6 +45,17 @@ p {
   text-align: center;
 }
 
+#countdown .number {
+  font-size: 30px; /* Larger size for numbers */
+  font-weight: bold; /* Optional: makes numbers bold */
+}
+
+#countdown .label {
+  font-size: 14px; /* Smaller size for labels */
+  margin-left: 5px; /* Adds space between number and label */
+  display: inline-block; /* Ensures proper alignment */
+}
+
 .social-links {
   margin-top: 20px;
   display: flex;
